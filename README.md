@@ -39,12 +39,14 @@ npm install --save-dev color-loader
 
 ## Usage
 
+Get a color palette comprised of the most dominant colors in your image:
+
 ```js
 import colors from 'color-loader!./path/to/image.jpg';
-// returns array of the 5 most dominant colors from the image, as RGB color strings
+// returns array of RGB color strings
 ```
 
-Or in your webpack configuration:
+You can use it in your webpack configuration, too, however this means that all images that you `import` or `require` will return an array of colors.
 
 ```js
 {
