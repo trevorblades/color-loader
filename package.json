@@ -6,6 +6,16 @@
   "repository": "https://github.com/trevorblades/color-loader",
   "author": "Trevor Blades <tdblades@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "webpack",
+    "color",
+    "loader",
+    "average",
+    "extract",
+    "image",
+    "palette",
+    "rgb"
+  ],
   "dependencies": {
     "color": "^1.0.3",
     "color-thief": "^2.2.2",
