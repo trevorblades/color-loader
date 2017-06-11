@@ -40,7 +40,7 @@ npm install --save-dev color-loader
 ## Usage
 
 ```js
-import colors from 'color-loader!./path/to/image.jpg`;
+import colors from 'color-loader!./path/to/image.jpg';
 // returns array of the 5 most dominant colors from the image, as RGB color strings
 ```
 
@@ -65,6 +65,6 @@ Or in your webpack configuration:
 Get only the most dominant color of the image by passing the `simple` query param to the loader:
 
 ```js
-import color from 'color-loader?simple!./path/to/image.jpg`;
+import color from 'color-loader?simple!./path/to/image.jpg';
 // returns a single RGB color string
 ```
