@@ -1,7 +1,7 @@
 {
   "name": "color-loader",
   "version": "0.0.3",
-  "description": "image color palette loader for webpack",
+  "description": "Image color palette loader for webpack",
   "main": "index.js",
   "repository": "https://github.com/trevorblades/color-loader",
   "author": "Trevor Blades <tdblades@gmail.com>",
