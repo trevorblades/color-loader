@@ -50,3 +50,18 @@ Will result in these colors:
  - ![#78993b](https://placehold.it/24/78993b/000000?text=+) #78993b
  - ![#839795](https://placehold.it/24/839795/000000?text=+) #839795
  - ![#8c472f](https://placehold.it/24/8c472f/000000?text=+) #8c472f
+
+ You could use it in a React component like this:
+
+ ```js
+import image, {color} from './example.png';
+
+const Component = () => (
+  <div style={{
+    backgroundColor: color,
+    backgroundImage: image
+  }}>
+    <h1>Hello world!</h1>
+  </div>
+);
+ ```
