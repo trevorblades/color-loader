@@ -1,4 +1,5 @@
 const getColors = require('get-image-colors');
+const outdent = require('outdent');
 const path = require('path');
 
 const compiler = require('./compiler.js');
@@ -11,8 +12,10 @@ test('extracts the color palette of an image', async () => {
   const output = stats.toJson().modules[0].source;
   const colors = await getColors(imagePath);
   expect(output).toBe(
-    `module.exports = __webpack_public_path__ + "00059afd33ab2de3f25979f18c49d535.png";module.exports.color = "${colors[0].hex()}";module.exports.colors = [${colors
-      .map(color => `"${color}"`)
-      .join(',')}];`
+    outdent`
+      export default __webpack_public_path__ + "00059afd33ab2de3f25979f18c49d535.png";
+      export const color = "${colors[0].hex()}";
+      export const colors = [${colors.map(color => `"${color}"`).join(',')}];
+    `
   );
 });

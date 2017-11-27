@@ -24,7 +24,8 @@
   },
   "dependencies": {
     "file-type": "^7.3.0",
-    "get-image-colors": "^1.8.1"
+    "get-image-colors": "^1.8.1",
+    "outdent": "^0.4.1"
   },
   "devDependencies": {
     "eslint": "^4.12.0",

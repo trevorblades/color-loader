@@ -12,7 +12,7 @@ A webpack loader that extracts the color palette for an image
 
 ## Usage
 
-Get a color palette comprised of the most dominant colors in your image:
+This loader is designed to be a drop-in replacement for `file-loader`. It will output the path to the provided image, along with information about the colors in the image. It features support for JPEG, PNG, GIF, and SVG files.
 
 ```js
 import image, {color, colors} from 'color-loader!./path/to/image.jpg';
@@ -37,6 +37,10 @@ You can use it in your webpack configuration, too! This means that all images th
   }
 }
 ```
+
+## Options
+
+`color-loader` takes no options, however because it implements `file-loader`, you can pass along any options you would normally pass to that loader. More information about `file-loader` [here](https://github.com/webpack-contrib/file-loader).
 
 ## Example
 
