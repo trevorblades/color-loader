@@ -4,51 +4,9 @@
 
 A webpack loader that extracts the color palette for an image
 
-## Dependencies
-
-This loader depends on the `node-canvas` library, which requires [Cairo](https://cairographics.org) and some other dependencies to be installed on the machine that runs your webpack builds.
-
-### macOS
-
-```
-brew install pkg-config cairo libpng jpeg giflib
-```
-
-### Ubuntu
-
-```
-sudo apt-get install libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++
-```
-
-### Fedora
-
-```
-sudo yum install cairo cairo-devel cairomm-devel libjpeg-turbo-devel pango pango-devel pangomm pangomm-devel giflib-devel
-```
-
-### Solaris
-
-```
-pkgin install cairo pkg-config xproto renderproto kbproto xextproto
-```
-
-### Windows
-
-Windows installation instructions are available [here](https://github.com/Automattic/node-canvas/wiki/Installation---Windows).
-
 ## Installation
 
-Install `color-loader` using your favourite package manager:
-
-```
-yarn add --dev color-loader
-```
-
-...or
-
-```
-npm install --save-dev color-loader
-```
+`npm install --save color-loader`
 
 ## Usage
 
@@ -56,14 +14,14 @@ Get a color palette comprised of the most dominant colors in your image:
 
 ```js
 import colors from 'color-loader!./path/to/image.jpg';
-// returns array of RGB color strings
+// returns an array of hex color strings
 ```
 
 You can use it in your webpack configuration, too, however this means that all images that you `import` or `require` will return an array of colors.
 
 ```js
 {
-  ...
+  // ...your awesome webpack config options
   module: {
     rules: [
       {
@@ -77,7 +35,24 @@ You can use it in your webpack configuration, too, however this means that all i
 
 ### Options
 
-Get only the most dominant color of the image by passing the `simple` query param to the loader:
+Get only the most dominant color of the image by setting the loader's `simple` option to `true` in in your webpack config.
+
+```js
+// in your webpack config
+{
+  test: /\.(jpg|png|gif)$/,
+  use: 'color-loader',
+  options: {
+    simple: true
+  }
+}
+
+// in your app
+import color from 'color-loader!./path/to/image.jpg';
+// returns a single RGB color string
+```
+
+You can also pass `simple` as a query param to your inline loaders.
 
 ```js
 import color from 'color-loader?simple!./path/to/image.jpg';
