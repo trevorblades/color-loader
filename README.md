@@ -62,7 +62,7 @@ import image, {color} from './example.png';
 
 const Component = () => (
   <div style={{
-    backgroundColor: color,
+    backgroundColor: color, // #3a4f25
     backgroundImage: image
   }}>
     <h1>Hello world!</h1>
