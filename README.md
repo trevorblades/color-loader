@@ -58,3 +58,16 @@ You can also pass `simple` as a query param to your inline loaders.
 import color from 'color-loader?simple!./path/to/image.jpg';
 // returns a single RGB color string
 ```
+
+## Example
+
+This image:
+
+![example image](https://raw.githubusercontent.com/trevorblades/color-loader/master/test/example.png)
+
+Will result in these colors:
+ - ![#3a4f25](https://placehold.it/24/3a4f25/000000?text=+) #3a4f25
+ - ![#b37a5d](https://placehold.it/24/b37a5d/000000?text=+) #b37a5d
+ - ![#78993b](https://placehold.it/24/78993b/000000?text=+) #78993b
+ - ![#839795](https://placehold.it/24/839795/000000?text=+) #839795
+ - ![#8c472f](https://placehold.it/24/8c472f/000000?text=+) #8c472f
