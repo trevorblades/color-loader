@@ -30,7 +30,7 @@ You can use it in your webpack configuration, too! This means that all images th
   module: {
     rules: [
       {
-        test: /\.(jpg|png|gif)$/,
+        test: /\.(jpg|png|gif|svg)$/,
         use: 'color-loader'
       }
     ]
