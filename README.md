@@ -8,7 +8,7 @@ A webpack loader that extracts the color palette for an image
 
 `color-loader` has a peer dependency on `file-loader`.
 
-`npm install --save file loader color-loader`
+`npm install --save file-loader color-loader`
 
 ## Usage
 
