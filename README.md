@@ -63,10 +63,12 @@ Will result in these colors:
 import image, {color} from './example.png';
 
 const Component = () => (
-  <div style={{
-    backgroundColor: color, // #3a4f25
-    backgroundImage: image
-  }}>
+  <div
+    style={{
+      backgroundColor: color, // #3a4f25
+      backgroundImage: image
+    }
+  }>
     <h1>Hello world!</h1>
   </div>
 );
