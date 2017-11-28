@@ -6,7 +6,9 @@ A webpack loader that extracts the color palette for an image
 
 ## Installation
 
-`npm install --save file-loader color-loader`
+```
+npm install --save file-loader color-loader
+```
 
 `color-loader` has a peer dependency on `file-loader`, so we'll need to make sure we have that installed.
 
