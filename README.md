@@ -69,7 +69,11 @@ const Component = () => (
       backgroundImage: image
     }}
   >
-    <h1>Hello world!</h1>
+    <h1>They ate the Pokémon...</h1>
   </div>
 );
  ```
+ 
+ And it might look something like this (results may vary):
+ 
+ ![example gif](https://raw.githubusercontent.com/trevorblades/color-loader/master/example.gif)
