@@ -67,8 +67,8 @@ const Component = () => (
     style={{
       backgroundColor: color, // #3a4f25
       backgroundImage: image
-    }
-  }>
+    }}
+  >
     <h1>Hello world!</h1>
   </div>
 );
