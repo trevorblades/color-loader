@@ -48,7 +48,7 @@ You can use it in your webpack configuration, too! This means that all images th
 
 This image:
 
-![example image](https://raw.githubusercontent.com/trevorblades/color-loader/master/test/example.png)
+![example image](https://raw.githubusercontent.com/trevorblades/color-loader/master/example.png)
 
 Will result in these colors:
  - ![#3a4f25](https://placehold.it/24/3a4f25/000000?text=+) #3a4f25
