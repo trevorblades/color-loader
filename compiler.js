@@ -15,7 +15,7 @@ module.exports = (fixture, options) => {
         {
           test: /\.png$/,
           use: {
-            loader: path.resolve(__dirname, '../loader.js'),
+            loader: path.resolve(__dirname, './loader.js'),
             options
           }
         }
