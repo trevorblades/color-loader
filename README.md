@@ -1,8 +1,8 @@
-# color-loader
+# Color Loader
 
 [![CircleCI](https://circleci.com/gh/trevorblades/color-loader.svg?style=shield)](https://circleci.com/gh/trevorblades/color-loader)
 
-A webpack loader that extracts the color palette for an image
+A webpack loader that extracts the color palette of an image
 
 ## Installation
 
