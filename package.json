@@ -1,6 +1,6 @@
 {
   "name": "color-loader",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "A webpack loader that extracts the color palette of an image",
   "author": "Trevor Blades <tdblades@gmail.com>",
   "repository": "trevorblades/color-loader",
