@@ -23,7 +23,7 @@
     "testEnvironment": "node"
   },
   "peerDependencies": {
-    "file-loader": "^1.1.5"
+    "file-loader": ">=1"
   },
   "dependencies": {
     "file-type": "^7.3.0",
